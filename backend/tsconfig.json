@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Environment Settings
+    "module": "ESNext",            // ✅ Changed from commonjs
+    "target": "ES2022",            // ✅ Changed from esnext
+    "types": ["node"],
+    "lib": ["ES2022"],             // ✅ Changed from esnext
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Recommended Options
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",    // ✅ Add this
+    "resolveJsonModule": true      // ✅ Add this
+  }
+}
